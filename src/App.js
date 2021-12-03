@@ -1,4 +1,3 @@
-import './App.css';
 import { ConceptosBasicos } from './components/ConceptosBasicos';
 
 function App() {
