@@ -20,7 +20,6 @@ export const MenuConceptos = () => {
                     <Link to='/no-existe'>Error 404</Link>
                 </li>
 
-                {/* //* NavLink nos va a hacer lo mismo que Link solo que este nos va a plicar la propiedad activeClassName a el link que este activo es decir en el que estemos.. Es importante colocar el mismo atributo exact que usabamos en las rutas del router para que se aplique la clase de manera mas eficiente*/}
                 <li>
                     <span>Componente NavLink: </span>
                     <NavLink exact to='/' activeClassName='active'>
@@ -35,6 +34,12 @@ export const MenuConceptos = () => {
                     <NavLink to='/no-existe' activeClassName='active'>
                         Error 404
                     </NavLink>
+                </li>
+
+                <li>
+                    <span>Parámetros: </span>
+                    <Link to='/usuario/nicolay'>Nicolay</Link>
+                    <Link to='/usuario/linda'>Linda</Link>
                 </li>
             </ol>
         </nav>
