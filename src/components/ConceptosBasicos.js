@@ -26,10 +26,25 @@ export const ConceptosBasicos = () => {
                             Lorem ut aliqua reprehenderit aliqua veniam.
                         </p>
                     </Route>
-                    // Para invocar el componente mediante la propiedad
-                    component de Route, debe llamarse directo como si fuera una
-                    funcion:
-                    <Route exact path='/contacto' component={Contacto} />
+                    {/* <Route exact path='/contacto' component={Contacto} /> */}
+                    <Route
+                        path='/contacto'
+                        children={
+                            <>
+                                <Contacto />
+                                <p>
+                                    Irure voluptate qui sint eiusmod. Laborum
+                                    consectetur sint laborum veniam
+                                    reprehenderit ullamco minim mollit.
+                                    Voluptate cillum voluptate velit consectetur
+                                    enim culpa ad. Est esse do cupidatat amet ut
+                                    amet Lorem aliquip. Velit amet eu nostrud
+                                    sunt pariatur cillum nisi magna labore
+                                    fugiat aute nulla id.
+                                </p>
+                            </>
+                        }
+                    />
                 </Switch>
             </Router>
         </div>
