@@ -26,10 +26,10 @@ export const ConceptosBasicos = () => {
                             Lorem ut aliqua reprehenderit aliqua veniam.
                         </p>
                     </Route>
-                    <Route exact path='/contacto'>
-                        <h3>Contacto</h3>
-                        <Contacto />
-                    </Route>
+                    // Para invocar el componente mediante la propiedad
+                    component de Route, debe llamarse directo como si fuera una
+                    funcion:
+                    <Route exact path='/contacto' component={Contacto} />
                 </Switch>
             </Router>
         </div>
