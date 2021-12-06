@@ -7,6 +7,7 @@ import { MenuConceptos } from './MenuConceptos';
 
 import '../index.css';
 import { Usuario } from '../pages/Usuario';
+import { Productos } from '../pages/Productos';
 
 export const ConceptosBasicos = () => {
     return (
@@ -26,6 +27,8 @@ export const ConceptosBasicos = () => {
                         path='/usuario/:username'
                         component={Usuario}
                     />
+
+                    <Route path='/productos' component={Productos} />
 
                     <Route path='*' component={Error404} />
                 </Switch>

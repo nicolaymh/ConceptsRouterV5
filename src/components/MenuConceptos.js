@@ -41,6 +41,11 @@ export const MenuConceptos = () => {
                     <Link to='/usuario/nicolay'>Nicolay</Link>
                     <Link to='/usuario/linda'>Linda</Link>
                 </li>
+
+                <li>
+                    <span>Parámetros de Consulta: </span>
+                    <Link to='/productos'>Productos</Link>
+                </li>
             </ol>
         </nav>
     );
