@@ -12,6 +12,7 @@ import { MenuConceptos } from './MenuConceptos';
 
 import { Usuario } from '../pages/Usuario';
 import { Productos } from '../pages/Productos';
+import { ReactTopics } from '../pages/ReactTopics';
 
 import '../index.css';
 
@@ -34,7 +35,7 @@ export const ConceptosBasicos = () => {
                         component={Usuario}
                     />
 
-                    <Route path='/productos' component={Productos} />
+                    <Route exact path='/productos' component={Productos} />
 
                     <Route exact path='/about'>
                         <Redirect to='/acerca' />
@@ -42,6 +43,8 @@ export const ConceptosBasicos = () => {
                     <Route exact path='/contact'>
                         <Redirect to='/contacto' />
                     </Route>
+
+                    <Route path='/react' component={ReactTopics} />
 
                     <Route path='*' component={Error404} />
                 </Switch>
