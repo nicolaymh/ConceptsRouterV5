@@ -4,7 +4,6 @@ import {
     Switch,
     Redirect,
     HashRouter,
-    Link,
 } from 'react-router-dom';
 import { Acerca } from '../pages/Acerca';
 import { Contacto } from '../pages/Contacto';
